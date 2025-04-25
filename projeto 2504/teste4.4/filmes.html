@@ -1,0 +1,70 @@
+<img onclick="abrirModal()" class="img2" src="./img/taxi-driver.jpg">
+<img onclick="abrirModal()" class="img2" src="./img/star wars III.jpg">
+<img onclick="abrirModal()" class="img2" src="./img/godfatherII.jpg.jpg">
+<img onclick="abrirModal()" class="img2" src="./img/rocky.jpg">
+<img onclick="abrirModal()" class="img2" src="./img/the_batman.webp">
+
+
+
+
+function abrirModal(){
+    const modal = document.getElementById('modal-taxi')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click',(e) => {
+        if(e.target.id == 'fechar'|| e.target.id== 'modal-taxi')
+            modal.classList.remove('abrir')
+    })
+}
+
+function abrirModal(){
+    const modal = document.getElementById('modal-starwars')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click',(e) => {
+        if(e.target.id == 'fechar'|| e.target.id== 'modal-starwars')
+            modal.classList.remove('abrir')
+    })
+}
+
+
+
+
+background-color: rgb(59, 59, 59);
+
+
+
+0% { background: red;}
+25% {background: blue;}
+50% { background: cyan;}
+75% { background: green;}
+100% { background: grey;}
+
+
+
+
+width: 100vw;
+height: 100vh;
+background: linear-gradient(to right, black, rgb(14, 14, 43), rgb(0, 130, 255));
+background-size: 500% 100%;
+animation: anima 3s infinite linear alternate;
+
+}
+@keyframes anima {
+0%{
+    background-position-x: 0%;
+}
+100%{
+    background-position-x: 100%;
+
+}
+}
+
+
+@keyframes cores {
+    0% { background: rgb(61, 58, 192);}
+25% {background: rgb(32, 58, 175);}
+50% { background: rgb(51, 72, 165);}
+75% { background: rgb(43, 41, 146);}
+100% { background: rgb(61, 85, 194);}
+}
