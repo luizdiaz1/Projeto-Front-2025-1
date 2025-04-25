@@ -1,18 +1,84 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRIS</title>
-    <link rel="shortcut icon" href="IRIS_ICO.ico" type="image/x-icon">
+    <title>Planos - IRIS</title>
+    <link rel="stylesheet" href="nos.css">
 </head>
-<style>
-    body{
-        background-color: rgb(59, 59, 59);
-        color: white;
-    }
-</style>
-<body>
-    <h1>PLANOS</h1>
+<body class="dark-mode">
+    <!-- Cabeçalho com Menu -->
+    <header>
+        <div class="logo">IRIS</div>
+        
+        <div class="nav-center">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="login.html" class="login-link">Entrar</a></li>
+                    <li><a href="nos.html">Sobre Nós</a></li>
+                    </ul>
+            </nav>
+        </div>
+        
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </header>
+
+    <section class="plans-section">
+        <div class="container">
+            <h2>Escolha seu Plano</h2>
+            <div class="plans-grid">
+                <!-- Plano Básico -->
+                <div class="plan-card basic">
+                    <h3>Plano Básico</h3>
+                    <div class="price">R$19,90<span>/mês</span></div>
+                    <ul class="features">
+                        <li>✔ Acesso a todos os filmes</li>
+                        <li>✔ Qualidade HD</li>
+                        <li>✔ 1 tela simultânea</li>
+                        <li>✖ Conteúdo exclusivo</li>
+                        <li>✖ Downloads</li>
+                    </ul>
+                    <button class="btn plan-btn">Assinar</button>
+                </div>
+
+                <!-- Plano Top -->
+                <div class="plan-card top">
+                    <div class="popular-badge">MAIS POPULAR</div>
+                    <h3>Plano Top</h3>
+                    <div class="price">R$29,90<span>/mês</span></div>
+                    <ul class="features">
+                        <li>✔ Acesso a todos os filmes e séries</li>
+                        <li>✔ Qualidade Full HD</li>
+                        <li>✔ 3 telas simultâneas</li>
+                        <li>✔ Conteúdo exclusivo</li>
+                        <li>✖ Downloads ilimitados</li>
+                    </ul>
+                    <button class="btn plan-btn">Assinar</button>
+                </div>
+
+                <!-- Plano Ultra Premium -->
+                <div class="plan-card premium">
+                    <h3>Plano Ultra Premium</h3>
+                    <div class="price">R$49,90<span>/mês</span></div>
+                    <ul class="features">
+                        <li>✔ Acesso completo a todo conteúdo</li>
+                        <li>✔ Qualidade 4K Ultra HD</li>
+                        <li>✔ 5 telas simultâneas</li>
+                        <li>✔ Conteúdo exclusivo premium</li>
+                        <li>✔ Downloads ilimitados</li>
+                    </ul>
+                    <button class="btn plan-btn">Assinar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 IRIS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="nos.js"></script>
 </body>
 </html>
