@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
-    <link rel="stylesheet" href="LOGIN.css">
+    <title>Login - Iris</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <main class="container">
-        <form>
-            <h1>LOGIN IRIS</h1>
-            <div class="input-box">
-                <input placeholder="Usuário" type="email">
-                <i class="bx bxs-user"></i>
-            </div>
-            <div class="input-box">
-                <input placeholder="Senha" type="password">
-                <i class="bx bxs-lock-alt"></i>
-            </div>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">IRIS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="nos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle">🌙</button>
+    </header>
 
-            <div class="lembrar-senha">
-                <label>
-                <input type="checkbox">
-                 Lembrar senha
-            </label>
-            <a href="#">Esqueci a senha</a>
-            </div>
+    <!-- Formulário de Login -->
+    <main class="login-main">
+        <div class="container">
+            <form>
+                <h1>LOGIN</h1>
+                <div class="input-box">
+                    <input placeholder="Usuário" type="text" required>
+                    <i class="bx bxs-user"></i>
+                </div>
+                
+                <!-- Input de Senha (mantido) -->
+                <div class="input-box">
+                    <input placeholder="Senha" type="password" required>
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
 
-            <button type="submit" class="login"> <p>ENTRAR</p></button>
+                <div class="lembrar-senha">
+                    <label>
+                        <input type="checkbox">
+                        Lembrar senha
+                    </label>
+                    <a href="#">Esqueci a senha</a>
+                </div>
 
-            <div class="registro">
-                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-            </div>
-        </form>
+                <button type="submit" class="login-btn">ENTRAR</button>
 
-   
- 
+                <div class="registro">
+                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
 
-    
+    <script src="nos.js"></script>
 </body>
 </html>
