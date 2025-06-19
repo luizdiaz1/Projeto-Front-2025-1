@@ -1,18 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metflix</title>
-    <link rel="shortcut icon" href="nerd.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="IRIS_ICO.ico" type="image/x-icon">
+  <title>Iris - Filmes</title>
+  <link rel="stylesheet" href="filmes.css">
 </head>
-<style>
-    body{
-        background-color: black;
-        color: white;
-    }
-</style>
 <body>
-    <h1>FILMES: </h1>
+ <header>
+        <div class="logo">IRIS</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="nos.html">Sobre Nós</a></li>
+                <li><a href="login.html">Planos</a></li>
+            </ul>
+        </nav>
+        
+        <label class="search-label">
+          <input type="text" name="text" class="input" required="" placeholder="Pesquisar...">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 512 512" xml:space="preserve">
+            <g>
+              <path d="M55.146 51.887 41.588 37.786A22.926 22.926 0 0 0 46.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 0 0 .083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z" fill="currentColor" data-original="#000000" class=""></path>
+            </g>
+        </svg>
+        </label>
+
+    </header>
+
+    <div class="EmAlta">
+      <h2>Filmes Em Destaque</h2>
+    </div>
+
+  <!-- Em destaque -->
+  
+  <div class="container">
+  <div class="filme">
+  <div class="filme-img-container"> 
+  <img src="./img/interstellar_img.webp" alt="Filme 1">
+  <div class="play-icon">▶</div>
+  </div>
+  <h2>Interstellar</h2>
+  <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.</p>
+  </div>
+  
+  <div class="filme">
+  <div class="filme-img-container">
+  <img src="./img/vingadores_ultimato.webp" alt="Filme 2">
+  <div class="play-icon">▶</div>
+  </div>
+  <div>
+  <h2>Vingadores: Ultimato</h2>
+  </div>
+  <p>Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve Rogers e Natasha Romanov lideram a resistência contra o titã louco.</p>
+  </div>
+  
+  <div class="filme">
+  <div class="filme-img-container">
+  <img src="./img/the_batman.avif" alt="Filme 3">
+  <div class="play-icon">▶</div>
+  </div>
+  <h2>The Batman</h2>
+  <p>Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. Com poucos aliados confiáveis, o vigilante solitário se estabelece como a personificação da vingança para a população.</p>
+  </div>
+  </div>
+
+  <!-- Filmes Recomendados -->
+    
+    <section class="recomendados">
+    <h2>Filmes Recomendados</h2>
+    <div class="recomendados-container">
+    <div class="filme">
+    <div class="filme-img-container">
+    <img src="img/openheimer.jpg" alt="Filme recomendado 1">
+    <div class="play-icon">▶</div>
+    </div>
+    <h2>Oppenheimer</h2>
+    </div>
+    
+    
+    <div class="filme">
+    <div class="filme-img-container">
+    <img src="img/coringa.jpg" alt="Filme recomendado 2">
+    <div class="play-icon">▶</div>
+    </div>
+    <h2>Coringa</h2>
+    </div> 
+    
+    <div class="filme">
+    <div class="filme-img-container">
+    <img src="img/clube da luta.webp" alt="Filme recomendado 3">
+    <div class="play-icon">▶</div>
+    </div>
+    <h2>Clube da Luta</h2>
+    </div> 
+    
+    <div class="filme">
+    <div class="filme-img-container">
+    <img src="img/entidade.jpg" alt="Filme recomendado 4">
+    <div class="play-icon">▶</div>
+    </div>
+    <h2>A Entidade</h2>
+    </div> 
+  </section>
+    
+  <!-- Filmes Populares -->
+  
+  <section class="populares">
+  <div class="titulo-container">
+  <h2 class="titulo-secao">Filmes Populares</h2>
+  </div>
+  <div class="populares-container">  
+  <div class="filme">
+  <div class="filme-img-container">
+  <img src="img/rio.jpg" alt="Filme popular 1">
+  <div class="play-icon">▶</div>
+  </div>
+  <h2>Rio</h2>
+  </div>
+  
+  <div class="filme">
+  <div class="filme-img-container">
+  <img src="img/anabelle.webp" alt="Filme popular 2">
+  <div class="play-icon">▶</div>
+  </div>
+  <h2>Anabelle</h2>
+  </div>
+  
+  <div class="filme">
+  <div class="filme-img-container">
+  <img src="img/matrix.jpg" alt="Filme popular 3">
+  <div class="play-icon">▶</div>
+  </div>
+  <h2>Matrix</h2>
+  </div>
+  
+  <div class="filme">
+    <div class="filme-img-container">
+    <img src="img/Homem-Aranha-Sem-Volta-Para-Casa.webp" alt="Filme popular 4">
+    <div class="play-icon">▶</div>
+    </div>
+    <h2>Homem Aranha</h2>
+    </div>
+  
+    <div class="filme">
+      <div class="filme-img-container">
+      <img src="img/jurassic world.jpg" alt="Filme popular 5">
+      <div class="play-icon">▶</div>
+      </div>
+      <h2>Jurassic World: Dominion</h2>
+      </div>
+
+      <div class="filme">
+        <div class="filme-img-container">
+        <img src="img/star wars III.jpg" alt="Filme popular 6">
+        <div class="play-icon">▶</div>
+        </div>
+        <h2>Star Wars EP III</h2>
+        </div>
+
+      <div class="filme">
+          <div class="filme-img-container">
+          <img src="img/poster-resmi-fast-x-1.jpg" alt="Filme popular 7">
+          <div class="play-icon">▶</div>
+          </div>
+          <h2>Velozes e Furiosos 10</h2>
+          </div>
+
+      <div class="filme">
+            <div class="filme-img-container">
+            <img src="img/sexta13.webp" alt="Filme popular 8">
+            <div class="play-icon">▶</div>
+            </div>
+            <h2>Sexta-Feira 13 </h2>
+            </div>    
+            <div class="filme">
+              
+      <div class="filme-img-container">
+              <img src="img/deadpool e wolverine.jpg" alt="Filme popular 9">
+              <div class="play-icon">▶</div>
+              </div>
+              <h2>Deadpool & Wolverine</h2>
+              </div>
+      
+      <div class="filme">
+                <div class="filme-img-container">
+                <img src="img/pecadores.webp" alt="Filme popular 10">
+                <div class="play-icon">▶</div>
+                </div>
+                <h2>Pecadores</h2>
+                </div>  
+</section>
+ 
+    <!-- Modais -->
+
+      <div class="janela-modal" id="Interstellar">
+        <div class="modal">
+          <button class="fechar">X</button>
+          <div class="img-modal">
+            <a href="https://youtu.be/W6TVcu1kznk?si=NpXdEMmN_va60hIr" target="_blank">
+              <img src="/filmes_series-main/filmes-series/filmes/img/interstellar_img.webp" alt="">
+            </a>
+          </div>
+          <div class="nomefilme">
+            <h2>Rick And Morty</h2>
+            <p class="descricao_filme">
+              Um cientista genial e excêntrico arrasta seu neto em aventuras perigosas e bizarras pelo multiverso,
+              misturando humor ácido, ficção científica e críticas sociais.
+            </p>
+          </div>
+        </div>
+      </div>
+
+<footer>
+<p>© 2025 IRIS. Todos os direitos reservados.</p>
+</footer>
 </body>
 </html>
